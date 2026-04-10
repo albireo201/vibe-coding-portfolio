@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div class="lang-switch" aria-label="언어 선택">
+        <button class="lang-btn is-active" type="button" data-lang="ko">한국어</button>
+        <button class="lang-btn" type="button" data-lang="en">English</button>
+    </div>
+    <main class="container">
+        <header class="top-nav">
+            <a href="#" class="logo"><span class="logo-dot"></span>ePortfolio</a>
+            <nav>
+                <a href="#" data-i18n="navAbout">소개</a>
+                <a href="#" data-i18n="navServices">서비스</a>
+                <a href="#" data-i18n="navProjects">프로젝트</a>
+                <a href="#" data-i18n="navContact">문의</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-left">
+                <p class="eyebrow" data-i18n="heroEyebrow">프로덕트 디자이너</p>
+                <h1 data-i18n="heroName">김재현</h1>
+                <p class="sub" data-i18n="heroSub">저는 프리랜서 UI/UX 디자이너입니다. 현대적이고 간결한 인터페이스를 만듭니다.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary" data-i18n="contactMe">문의하기</button>
+                    <a href="#" class="btn-link" data-i18n="downloadCv">이력서 다운로드</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="photo-wrap">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Designer profile image">
+                </div>
+                <div class="slider-dots" aria-label="슬라이드 인디케이터">
+                    <button class="dot is-active" type="button" aria-label="슬라이드 1"></button>
+                    <button class="dot" type="button" aria-label="슬라이드 2"></button>
+                    <button class="dot" type="button" aria-label="슬라이드 3"></button>
+                    <button class="dot" type="button" aria-label="슬라이드 4"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-grid">
+            <div class="service-cards">
+                <article class="card" data-i18n="cardResearch">사용자 리서치</article>
+                <article class="card" data-i18n="cardVisual">비주얼 디자인</article>
+                <article class="card" data-i18n="cardTesting">사용자 테스트</article>
+                <article class="card" data-i18n="cardProto">프로토타이핑</article>
+            </div>
+
+            <div class="about-text">
+                <p class="eyebrow" data-i18n="aboutEyebrow">소개</p>
+                <h2 data-i18n="aboutTitle">더 나은 디자인,<br>더 좋은 경험</h2>
+                <p data-i18n="aboutP1">사용자 중심의 접근으로 브랜드와 서비스에 맞는 인터페이스를 설계합니다. 이해하기 쉬운 흐름과 일관된 시각 언어로 완성도를 높입니다.</p>
+                <p data-i18n="aboutP2">기획부터 프로토타입, 테스트까지 전 과정을 함께하며 실제 사용성 개선에 집중합니다.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary" data-i18n="contactMe">문의하기</button>
+                    <a href="#" class="btn-link" data-i18n="downloadCv">이력서 다운로드</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase-section">
+            <div class="showcase-media-wrap">
+                <div class="float-dots left">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="float-dots right">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <div class="showcase-media">
+                    <div class="showcase-image-box">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80" alt="Portfolio showcase image">
+                        <div class="media-progress">
+                            <span class="media-progress-dot"></span>
+                            <div class="media-progress-bar"></div>
+                            <small>4:00PM</small>
+                        </div>
+                    </div>
+
+                    <div class="slider-dots" aria-label="슬라이드 인디케이터">
+                        <button class="dot is-active" type="button" aria-label="쇼케이스 슬라이드 1"></button>
+                        <button class="dot" type="button" aria-label="쇼케이스 슬라이드 2"></button>
+                        <button class="dot" type="button" aria-label="쇼케이스 슬라이드 3"></button>
+                        <button class="dot" type="button" aria-label="쇼케이스 슬라이드 4"></button>
+                        <button class="dot" type="button" aria-label="쇼케이스 슬라이드 5"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-panel">
+                <div class="services-intro">
+                    <p class="eyebrow" data-i18n="servicesEyebrow">나의 서비스</p>
+                    <h2 data-i18n="servicesTitle">고객을 위해 제가 할 수 있는 일</h2>
+                    <p data-i18n="servicesDesc">브랜드 방향성과 사용자 경험을 함께 고려해 실무에 바로 적용 가능한 디자인을 제공합니다.</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" data-i18n="viewAll">전체보기</button>
+                        <a href="#" class="btn-link" data-i18n="contactMe">문의하기</a>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-box">
+                        <h3 data-i18n="service1Title">브랜드 아이덴티티</h3>
+                        <p data-i18n="service1Body">브랜드 톤앤매너를 반영한 시각 체계를 설계합니다.</p>
+                        <a href="#" data-i18n="readMore">자세히 보기</a>
+                    </article>
+                    <article class="service-box">
+                        <h3 data-i18n="service2Title">프로덕트 디자인</h3>
+                        <p data-i18n="service2Body">사용자 흐름에 맞춘 웹/앱 화면을 설계합니다.</p>
+                        <a href="#" data-i18n="readMore">자세히 보기</a>
+                    </article>
+                    <article class="service-box">
+                        <h3 data-i18n="service3Title">인터랙션 디자인</h3>
+                        <p data-i18n="service3Body">자연스럽고 직관적인 동작 경험을 디자인합니다.</p>
+                        <a href="#" data-i18n="readMore">자세히 보기</a>
+                    </article>
+                    <article class="service-box">
+                        <h3 data-i18n="service4Title">앱 디자인</h3>
+                        <p data-i18n="service4Body">실제 개발 환경을 고려한 모바일 UI를 제작합니다.</p>
+                        <a href="#" data-i18n="readMore">자세히 보기</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
