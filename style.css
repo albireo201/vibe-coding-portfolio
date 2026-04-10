@@ -168,8 +168,8 @@ h1 {
 }
 
 .photo-wrap {
-    width: min(100%, 470px);
-    aspect-ratio: 1/1;
+    width: min(100%, 400px);
+    aspect-ratio: 3/4;
     border-radius: 2rem;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary) 52%, var(--accent) 52%, var(--accent) 100%);
     padding: 0.8rem;
@@ -181,8 +181,9 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 33%;
     border-radius: 1.5rem;
-    filter: brightness(1.24) contrast(0.9) saturate(0.86);
+    filter: brightness(1.26) contrast(0.9) saturate(0.88);
 }
 
 .slider-dots {
